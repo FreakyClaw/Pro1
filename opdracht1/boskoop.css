@@ -1,0 +1,18 @@
+.boskoop-img {
+  width: 20%;
+}
+
+.woonplaats {
+  text-align: center;
+}
+p {
+  font-family: "Hepta slab", monospace;
+}
+
+.link {
+  background: linear-gradient(35deg, #AAFFFF, #FFAAAA);
+  padding: 20px;
+  float: right;
+  text-decoration: none;
+  color:black;
+}

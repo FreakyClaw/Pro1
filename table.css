@@ -1,0 +1,25 @@
+body {
+    font-family: monospace;
+}
+
+.header {
+    text-align: center;
+}
+
+.rooster {
+    width: 100%;
+    font-size: 15px;
+}
+
+.top-table-row {
+    background-color: gray;
+    font-size: 20px;
+}
+
+.table-item {
+    border: 2px solid black;
+}
+
+em {
+    background-color: #c7c7c7 ;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title id="title"></title>
+        <link rel="stylesheet" type="text/css" href="javascript.css">
+        <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+
+    </head>
+    <body onload="myFunction()">
+        <div class="header">
+            <h1>Tijd met javascript</h1>
+            <h3>Cornell van der Straaten - MG1C</h3>
+        </div>
+
+        <div class="buttons">
+                <input type="button" value="klik mij" id="mijnButton" class="button">
+                <input type="button" value="klik mij ook" id="mijnButtonOok" class="button">
+            
+            <div class="list">
+                <ul>
+                    <li>Jaar: <span id="jaar"> ------</span></li>
+                    <li>Maand: <span id="maand"> ------</span></li>
+                    <li>Dag: <span id="dag"> ------</span></li>
+                    <li>Uur: <span id="uur"> ------</span></li>
+                    <li>Minuten: <span id="minuten"> ------</span></li>
+                    <li>Seconden: <span id="seconden"> ------</span></li>
+                </ul>
+            </div>
+         
+        <script>
+
+            
+            let mijnButton = document.getElementById("mijnButton");
+            let mijnButtonOok = document.getElementById("mijnButtonOok");
+            let jaar = document.getElementById("jaar");
+            let maand = document.getElementById("maand");
+            let dag = document.getElementById("dag");
+            let uur = document.getElementById("uur");
+            let minuten = document.getElementById("minuten");
+            let seconden = document.getElementById("seconden");
+            let datum = new Date();
+
+   
+            
+            function myFunction() {
+                let boodschap = "Hoe laat is het?";
+                if (datum.getHours() >= 7) {boodschap = "Goedemorgen"}
+                if (datum.getHours() >= 12) {boodschap = "Goedemiddag"}
+                if (datum.getHours() >= 18) {boodschap = "Goedeavond"}
+                if (datum.getHours() >= 23) {boodschap = "Goedenacht"}
+                document.title = boodschap;
+
+                mijnButtonOok.addEventListener("click", ()=>{
+                window.alert(boodschap);        
+            })         
+            }
+
+            maanden = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli",
+            "Augustus", "September", "Oktober", "November", "December"]
+
+            dagen = ["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"];
+
+            mijnButton.addEventListener("click", ()=>{    
+                jaar.innerHTML = datum.getFullYear();
+                maand.innerHTML = datum.getMonth() + ", "+ maanden[datum.getMonth()];
+                dag.innerHTML = datum.getDate() +", " + dagen[datum.getDay()];
+                uur.innerHTML = datum.getHours();
+                minuten.innerHTML = datum.getMinutes();
+                seconden.innerHTML = datum.getSeconds();
+            })
+            
+
+
+           
+        </script>
+    </body>
+</html>

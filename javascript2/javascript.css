@@ -1,0 +1,11 @@
+body {
+    font-family: "hepta slab", monospace;
+    text-align: center;
+}
+.button {
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
