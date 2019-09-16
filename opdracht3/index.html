@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Opdracht 3</title>
         <link rel="stylesheet" type="text/css" href="opdracht3.css">
         <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+        <title>Opdracht 3</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Opdracht 3 lijsten">
+        <meta name="ketwords" content="HTML,CSS">
+        <meta name="author" content="Cornell van der Straaten">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <h1 class="title">PRO1 Opdracht 3 HTML lists</h1>
         <h3 class="sub-title">Talen ranglijst</h3>
-        <ol class="o-list1">
+        <ol class="o-list">
             <li class="list-item">HTML</li>
             <li class="list-item">JavaScript</li>
             <li class="list-item">css</li>
@@ -18,7 +22,7 @@
         </ol>
 
         <h3 class="sub-title">Lekkere nummertjes [Naam - Artiest]</h3>
-        <ul class="u-list1">
+        <ul class="u-list">
             <li class="list-item">still feel. - half alive</li>
             <li class="list-item">Love Again - New Hope Club</li>
             <li class="list-item">Color - Grant</li>
@@ -26,7 +30,14 @@
             <li class="list-item">Get Stüpid - bülow</li>
             <li class="list-item">5 liedjes van Maroon 5
                 <ul class="u-list-nested">
-                    <li class="list-item">Misery</li>
+                    <li class="list-item">Misery
+                        <ul class="u-list-nested">
+                            <li>Ik ga wel goed op dit lied.</li>
+                            <li>Eigenlijk ieder liedje van Maroon 5.</li>
+                            <li>Althans, degene in deze rij.</li>
+                            <li>Dit moest een lijst zijn maar ik weet niks dat zou passen.</li>
+                        </ul>
+                    </li>
                     <li class="list-item">Sugar</li>
                     <li class="list-item">Cold</li>
                     <li class="list-item">Runaway</li>
@@ -35,5 +46,28 @@
             </li>
             <li class="list-item">Tell Me - Spencer Sutherland</li>
         </ul>
+
+        <h3 class="sub-title">Geordende lijst, start 10 --> springt naar 100</h3>
+        <ol class="o-list" start="10">
+            <li class="list-item">Lorem</li>
+            <li class="list-item">Ipsum</li>
+            <li class="list-item">Dolor</li>
+            <li class="list-item">Sit</li>
+            <li class="list-item">Amet,</li>
+            <li value="100" class="list-item">Consectatur</li>
+            <li class="list-item">Adipiscing</li>
+            <li class="list-item">Elit.</li>
+        </ol>
+
+        <footer>
+                <div class="validatie">
+                    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                        <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+                    </a>
+                </div>
+            </footer>
+
     </body>
 </html>

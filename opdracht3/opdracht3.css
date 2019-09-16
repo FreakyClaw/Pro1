@@ -14,3 +14,10 @@ body {
     border-radius: 20px;
     padding: 5px; 
 }
+
+.validatie img {
+    height: 1.5em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
