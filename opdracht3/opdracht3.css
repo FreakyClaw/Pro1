@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(90deg, gray, white);
+    font-family: "Hepta Slab", monospace;
+}
+
+.title {
+    background: linear-gradient(90deg, rgb(179, 179, 179), white);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sub-title {
+    background: linear-gradient(90deg, rgb(179, 179, 179), white);
+    border-radius: 20px;
+    padding: 5px; 
+}
