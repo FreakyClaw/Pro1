@@ -8,4 +8,4 @@ Opdracht3 = Oefenen met lijsten en validation -Highlight is: Simpel maar okay de
 
 Javascript1 = Basic JS. Een pop-up met de tijd wanneer je op een knop drukt. -Highlight is: Geen. Het is gewoon JS intro.
 
-Javascript2 = Nogmaals basic JS. Een tik meer advanced ivm gebruik van arrays. Een leuke opdracht met veel haar uit hoofd trekken en dopamine bursts wanneer het lukte.
+Javascript2 = Nogmaals basic JS. Een tik meer advanced ivm gebruik van arrays. Een leuke opdracht met veel haar uit hoofd trekken als het fout ging en dopamine bursts wanneer het lukte.
