@@ -15,28 +15,17 @@ body {
     padding: 5px; 
 }
 
-.validatie img {
-    height: 1.5em;
+.validatie{
+    height: 1.2em;
     width: auto;
     border: 0;
     margin: 0 .3em;
 }
-/*
-.list-item-img {
-    list-style-image: url(eye_icon.png);
-    
-}
 
-*/
 
 .list-item-img {
-    list-style: none;
-    background-size: 20px;
-    display: list-item;
+    list-style-image: url(eye_icon3.png);
 
 }
 
-.ul-list-img {
-    background-image: url(eye_icon.png);
-    background: no-repeat;
-}
+
