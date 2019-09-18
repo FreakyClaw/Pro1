@@ -4,6 +4,7 @@ body {
 }
 .button {
     padding: 10px;
+    background: linear-gradient(90deg, rgb(250, 206, 206), #CCFFFF)
 }
 
 li {

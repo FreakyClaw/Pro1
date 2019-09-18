@@ -48,7 +48,7 @@
                 if (datum.getHours() >= 7) {boodschap = "Goedemorgen"}
                 if (datum.getHours() >= 12) {boodschap = "Goedemiddag"}
                 if (datum.getHours() >= 18) {boodschap = "Goedeavond"}
-                if (datum.getHours() >= 23) {boodschap = "Goedenacht"}
+                if (datum.getHours() >= 00) {boodschap = "Goedenacht"}
                 document.title = boodschap;
 
                 mijnButtonOok.addEventListener("click", ()=>{
@@ -63,7 +63,7 @@
 
             mijnButton.addEventListener("click", ()=>{    
                 jaar.innerHTML = datum.getFullYear();
-                maand.innerHTML = datum.getMonth() + ", "+ maanden[datum.getMonth()];
+                maand.innerHTML = datum.getMonth() + 1 + ", "+ maanden[datum.getMonth()];
                 dag.innerHTML = datum.getDate() +", " + dagen[datum.getDay()];
                 uur.innerHTML = datum.getHours();
                 minuten.innerHTML = datum.getMinutes();
