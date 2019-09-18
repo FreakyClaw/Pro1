@@ -8,6 +8,7 @@
 
     </head>
     <body onload="myFunction()">
+       <div class="center">
         <div class="header">
             <h1>Tijd met javascript</h1>
             <h3>Cornell van der Straaten - MG1C</h3>
@@ -27,7 +28,7 @@
                     <li>Seconden: <span id="seconden"> ------</span></li>
                 </ul>
             </div>
-         
+        </div> 
         <script>
 
             
@@ -42,19 +43,9 @@
             let datum = new Date();
 
    
+              
             
-            function myFunction() {
-                let boodschap = "Hoe laat is het?";
-                if (datum.getHours() >= 7) {boodschap = "Goedemorgen"}
-                if (datum.getHours() >= 12) {boodschap = "Goedemiddag"}
-                if (datum.getHours() >= 18) {boodschap = "Goedeavond"}
-                if (datum.getHours() >= 00) {boodschap = "Goedenacht"}
-                document.title = boodschap;
-
-                mijnButtonOok.addEventListener("click", ()=>{
-                window.alert(boodschap);        
-            })         
-            }
+            
 
             maanden = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli",
             "Augustus", "September", "Oktober", "November", "December"]
@@ -69,7 +60,33 @@
                 minuten.innerHTML = datum.getMinutes();
                 seconden.innerHTML = datum.getSeconds();
             })
+
+            let boodschap = "Hoe laat is het?";
+                if (datum.getHours() >= 0) {
+                    boodschap = "Goedenacht";
+                    document.body.style.backgroundImage = "url(images/night.jpg)";
+                  }
+                if (datum.getHours() >= 7) {
+                    boodschap = "Goedemorgen";
+                    document.body.style.backgroundImage = "url(images/morning.jpg)";
+                  }
+                if (datum.getHours() >= 12) {
+                    boodschap = "Goedemiddag";
+                    document.body.style.backgroundImage = "url(images/midday.jpg)";
+                  }
+                if (datum.getHours() >= 18) {
+                    boodschap = "Goedeavond";
+                    document.body.style.backgroundImage = "url(images/evening.jpg)";
+                  }
+                  document.title = boodschap;
+                mijnButtonOok.addEventListener("click", ()=>{
+                  window.alert(boodschap);
+                    
+                  })
             
+
+            
+          
 
 
            

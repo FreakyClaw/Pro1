@@ -4,9 +4,19 @@ body {
 }
 .button {
     padding: 10px;
-    background: linear-gradient(90deg, rgb(250, 206, 206), #CCFFFF)
+    background: linear-gradient(90deg, rgb(255, 112, 112), rgb(150, 255, 255))
 }
 
 li {
     list-style: none;
+}
+
+.center {
+    background-color: white;
+    border: 5px solid black;
+    opacity: 0.9;
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: 38.5%;
 }
