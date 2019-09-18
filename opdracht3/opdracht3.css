@@ -7,6 +7,7 @@ body {
     background: linear-gradient(90deg, rgb(179, 179, 179), white);
     border-radius: 20px;
     padding: 10px;
+    margin: 0px;
 }
 
 .sub-title {
@@ -30,6 +31,24 @@ body {
 
 .button {
     padding: 10px;
+    position: fixed;
+    right:25px;
+    margin:0;
 }
 
+
+#button1 {
+    bottom: 90%;
+    background: linear-gradient(90deg, gray,  white)
+}
+
+#button2 {
+    bottom: 83%;
+    background: linear-gradient(90deg, gray, white)
+}
+
+#button3 {
+    bottom: 76%;
+    background: linear-gradient(90deg, gray,white)
+}
 
