@@ -34,21 +34,63 @@ body {
     position: fixed;
     right:25px;
     margin:0;
+    border: solid gray 2px;
+    text-decoration: none;
+    color: black;
 }
 
+.button:hover { 
+    border: solid gray 4px;
+    text-decoration: underline; 
+}
 
 #button1 {
     bottom: 90%;
-    background: linear-gradient(90deg, gray,  white)
+    background: linear-gradient(90deg, gray,  white);
+    padding-left: 60px;
 }
 
 #button2 {
     bottom: 83%;
-    background: linear-gradient(90deg, gray, white)
+    background: linear-gradient(90deg, gray, white);
 }
 
 #button3 {
     bottom: 76%;
-    background: linear-gradient(90deg, gray,white)
+    background: linear-gradient(90deg, gray,white);
+    padding-left: 50px;
 }
 
+#button4 {
+    bottom: 69%;
+    background: linear-gradient(90deg, gray,white);
+    padding-left: 74px;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.rooster {
+    width: 100%;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.top-table-row {
+    background-color: gray;
+    font-size: 20px;
+}
+
+.table-item {
+    border: 2px solid black;
+}
+
+em {
+    background-color: #c7c7c7 ;
+}
+
+.table-title {
+    font-size: 50px;
+}
