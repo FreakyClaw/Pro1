@@ -10,6 +10,7 @@ body {
   background-image: url('../img/transp.png'), url('../img/grid.png');
   overflow: auto;
   width: 1240px;
+  margin: 0 auto;
   /* margin: 0 auto;
   Als je een element met een beperkte breedte zoals dit div-element met de class wrapper
   wil centreren dan geef je hem en marge 0 auto: vertikaal niets maar horizontaal auto.
@@ -46,12 +47,14 @@ section {
   /* door de breedte in te perken zouden er wel 3 sections in het main-element
   naast elkaar passen */
   float: left;
+  box-sizing: border-box;
   /* float: hierdoor gaan de elementen naar links en als er nog ruimte aan de
   rechterkant over is, vloeit de inhoud, die hiernaar komt er in.
   Kijk eventurrl wat er gebeurt als je float:left weghaald!! */
   border-radius: 15px;
 }
 .weinig {
+  width: 260px;
    /* dit is voor de sections met weinig inhoud: die kunnen smaller.
    Ze hebben in de amrk-up een class weinig meegekregen.
    Kijk goed naar de uitwerking en geef ze een breedte,

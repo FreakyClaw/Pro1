@@ -51,7 +51,7 @@ WVO.addEventListener("input", berekenGemiddeldeCluster3);
 function berekenGemiddeldeCluster3()
     {
         let gemiddelde = (parseFloat(SLB.value) + parseFloat(WVO.value))/2;
-        gemiddeldeCluster3.innerHTML = gemiddelde;
+        gemiddeldeCluster3.innerHTML = gemiddelde.toFixed(1);
         if(gemiddelde >= 5.5){
             studiepuntenBehaaldCluster3.innerHTML = studiepuntenHaalbaarCluster3;
         }
@@ -72,16 +72,39 @@ ENG.addEventListener("input", berekenGemiddeldeCluster4);
 NED.addEventListener("input", berekenGemiddeldeCluster4);
 REK.addEventListener("input", berekenGemiddeldeCluster4);
 
-function berekenGemiddeldeCluster4()
-    {
+function berekenGemiddeldeCluster4(){
+        
         let gemiddelde = (parseFloat(ENG.value) + parseFloat(NED.value) + parseFloat(REK.value))/3;
-        gemiddeldeCluster4.innerHTML = gemiddelde;
+      
+       if(Number.isNaN(gemiddelde)){
+           gemiddeldeCluster4.innerHTML = gemiddelde;
+
+       }
+       else {
+           gemiddeldeCluster4.innerHTML = gemiddelde.toFixed(1);
+       }
+      
+     
+        //gemiddeldeCluster4.innerHTML = gemiddelde.toFixed(1);
+        
+        
+        //als gem niet nan dan schrijf naae html
+        
         if(gemiddelde >= 5.5){
             studiepuntenBehaaldCluster4.innerHTML = studiepuntenHaalbaarCluster4;
         }
         else {studiepuntenBehaaldCluster4.innerHTML = 0;}
         berekenTotaalSP();
     }
+
+    function CheckInt( num, min, max ){
+        if( NaN( num ) ){
+        return false;
+        }else{
+        num = parseInt( num );
+        return min <= num && num <= max;
+        }
+        }
 
 // Cluster 5 
 
