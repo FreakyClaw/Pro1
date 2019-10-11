@@ -86,15 +86,15 @@ section > p {
 }
 
 #r2-c3 {
-  padding-bottom: 30.8px;
+  padding-bottom: 40.8px;
 }
 
 #r3-c2 {
-  padding-bottom: 82.4px;
+  padding-bottom: 103.4px;
 }
 
 #r3-c3 {
-  
+  padding-bottom: 41px;
 }
 
 h3 {
@@ -119,6 +119,14 @@ footer {
   blijft */
   background-color: rgba(0,0,0,.7);
   color: white;
+}
+
+footer p {
+  padding-left: 60px;
+}
+
+#validatie {
+  padding-left: 60px;
 }
 
 #validatie img {
