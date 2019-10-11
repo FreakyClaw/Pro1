@@ -43,7 +43,9 @@ main {
 }
 section {
   background-color: rgba(30, 200, 240, 0.5);
-  /*width: 360px;*/
+  width: 360px;
+  margin: 20px;
+  padding-bottom: 20px;
   /* door de breedte in te perken zouden er wel 3 sections in het main-element
   naast elkaar passen */
   float: left;
@@ -53,12 +55,46 @@ section {
   Kijk eventurrl wat er gebeurt als je float:left weghaald!! */
   border-radius: 15px;
 }
+
+section > h3 {
+  padding: 20px;
+}
+
+section > p {
+  padding: 0px 20px;
+}
 .weinig {
   width: 260px;
    /* dit is voor de sections met weinig inhoud: die kunnen smaller.
    Ze hebben in de amrk-up een class weinig meegekregen.
    Kijk goed naar de uitwerking en geef ze een breedte,
    zodat ze met 4 secties naast elkaar kunnen */
+}
+
+#r1-c1 {
+  padding-bottom: 61.5px;
+}
+#r1-c2 {
+  padding-bottom: 144.7px;
+}
+#r1-c4 {
+  padding-bottom: 41.2px;
+}
+
+#r2-c2 {
+  padding-bottom: 40.8px;
+}
+
+#r2-c3 {
+  padding-bottom: 30.8px;
+}
+
+#r3-c2 {
+  padding-bottom: 82.4px;
+}
+
+#r3-c3 {
+  
 }
 
 h3 {

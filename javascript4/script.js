@@ -9,11 +9,19 @@ TPR.addEventListener("input", berekenGemiddeldeCluster1);
 function berekenGemiddeldeCluster1()
     {
         let gemiddelde = (parseFloat(PROJ.value) + parseFloat(TPR.value))/2;
-        gemiddeldeCluster1.innerHTML = gemiddelde;
+        if (!isNaN(gemiddelde)){
+        gemiddeldeCluster1.innerHTML = gemiddelde;}
+        else {
+            gemiddeldeCluster1.innerHTML = "";
+        }
         if(gemiddelde >= 5.5){
             studiepuntenBehaaldCluster1.innerHTML = studiepuntenHaalbaarCluster1;
+            studiepuntenBehaaldCluster1.style.backgroundColor = "green";
         }
-        else {studiepuntenBehaaldCluster1.innerHTML = 0;}
+        else {
+            studiepuntenBehaaldCluster1.innerHTML = 0;
+            studiepuntenBehaaldCluster1.style.backgroundColor = "red";
+        }
         berekenTotaalSP();
     }
 
@@ -33,8 +41,12 @@ function berekenGemiddeldeCluster2()
         gemiddeldeCluster2.innerHTML = gemiddelde;
         if(gemiddelde >= 5.5){
             studiepuntenBehaaldCluster2.innerHTML = studiepuntenHaalbaarCluster2;
+            studiepuntenBehaaldCluster2.style.backgroundColor = "green";
         }
-        else {studiepuntenBehaaldCluster2.innerHTML = 0;}
+        else {
+            studiepuntenBehaaldCluster2.innerHTML = 0;
+            studiepuntenBehaaldCluster2.style.backgroundColor = "red";
+        }
         berekenTotaalSP();
     }
 
@@ -47,15 +59,19 @@ let WVO= document.getElementById("WVO");
 let gemiddeldeCluster3 = document.getElementById("gemiddeldeCluster3");
 
 SLB.addEventListener("input", berekenGemiddeldeCluster3);
-WVO.addEventListener("input", berekenGemiddeldeCluster3);
+WVO.addEventListener("input", berekenGemiddeldeCluster3); 
 function berekenGemiddeldeCluster3()
     {
         let gemiddelde = (parseFloat(SLB.value) + parseFloat(WVO.value))/2;
         gemiddeldeCluster3.innerHTML = gemiddelde.toFixed(1);
         if(gemiddelde >= 5.5){
             studiepuntenBehaaldCluster3.innerHTML = studiepuntenHaalbaarCluster3;
+            studiepuntenBehaaldCluster3.style.backgroundColor = "green";
         }
-        else {studiepuntenBehaaldCluster3.innerHTML = 0;}
+        else {
+            studiepuntenBehaaldCluster3.innerHTML = 0;
+            studiepuntenBehaaldCluster3.style.backgroundColor = "red";
+        }
         berekenTotaalSP();
     }
 
@@ -92,8 +108,11 @@ function berekenGemiddeldeCluster4(){
         
         if(gemiddelde >= 5.5){
             studiepuntenBehaaldCluster4.innerHTML = studiepuntenHaalbaarCluster4;
+            studiepuntenBehaaldCluster4.style.backgroundColor = "green";
         }
-        else {studiepuntenBehaaldCluster4.innerHTML = 0;}
+        else {
+            studiepuntenBehaaldCluster4.innerHTML = 0;
+        studiepuntenBehaaldCluster4.style.backgroundColor = "red";}
         berekenTotaalSP();
     }
 
@@ -120,8 +139,12 @@ function berekenGemiddeldeCluster5()
         gemiddeldeCluster5.innerHTML = gemiddelde;
         if(gemiddelde >= 5.5){
             studiepuntenBehaaldCluster5.innerHTML = studiepuntenHaalbaarCluster5;
+            studiepuntenBehaaldCluster5.style.backgroundColor = "green";
         }
-        else {studiepuntenBehaaldCluster5.innerHTML = 0;}
+        else {
+            studiepuntenBehaaldCluster5.innerHTML = 0;
+            studiepuntenBehaaldCluster5.style.backgroundColor = "red";
+        }
         berekenTotaalSP();
     }
 
